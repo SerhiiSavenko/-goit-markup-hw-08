@@ -1,0 +1,21 @@
+/* block 1 */
+:root {
+    /*Fonts*/
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+
+
+   /* Text colors */
+    --main-txt-cl: #212121;
+    --light-txt-cl: #FFFFFF;
+    
+    /*Background colors*/
+    --basic-blue: #2196F3;
+    --contacts-cl:  #757575;
+    --secondary-cl: #2F303A;
+    --icon-social-cl:#AFB1B8;
+
+    /*Others*/
+    --transition-time: 250ms;
+    --transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}

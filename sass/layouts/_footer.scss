@@ -1,0 +1,133 @@
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+.footer-info{
+    flex-grow: 1;
+    margin-right: 70px;
+}
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+}
+.footer-address-item,
+.footer-contacts-item {
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-contacts-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer-address {
+    font-style: normal;
+}
+
+.footer-address-item {
+    color: var(--light-txt-cl);
+    margin-bottom: 9px;
+}
+
+.footer {
+    background-color: var(--secondary-cl);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.join {
+    margin-right: 93px;
+}
+.footer-join-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    display: flex;
+    color: var(--light-txt-cl);
+    margin-bottom: 20px;
+}
+.footer-join-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--light-txt-cl);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-time) var(--transition-cubic),  color var(--transition-time) var(--transition-cubic);
+
+    &:hover,
+    &:focus {
+    color: var(--light-txt-cl);
+    background-color: var(--basic-blue);
+}
+}
+
+.footer-icon {
+    fill: currentColor;
+}
+
+.newsletter-title {
+    display: block;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: var(--light-txt-cl);
+    margin-bottom: 20px;
+}
+.newsletter-form-group {
+    display: flex;
+    gap: 12px;
+}
+.newsletter-form-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px 16px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    font-size: 16px;
+    outline: transparent;
+    transition: border-color var(--transition-time) var(--transition-cubic);
+
+    &:focus {
+        border-color: var(--basic-blue);
+    }
+}
+
+.newsletter-btn {
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    border: none;
+    background-color: var(--basic-blue);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.06em;
+    color: var(--light-txt-cl);
+    cursor: pointer;
+    transition: background-color var(--transition-time) var(--transition-cubic);
+
+    &:focus,
+    &:hover {
+      background-color: var(--basic-blue);  
+    }
+}

@@ -1,0 +1,59 @@
+.section--background {
+    background-color: #F5F4FA;
+}
+.team {
+    display: flex;
+    gap: 30px;
+}
+.team__item {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 4px 4px;
+}
+.team__info {
+    background-color: var(--light-txt-cl);
+    padding: 30px 0;
+}
+
+.team__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+.team__text {
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--contacts-cl); 
+    margin-bottom: 16px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--icon-social-cl);
+    cursor: pointer;
+    transition: background-color var(--transition-time) var(--transition-cubic), color var(--transition-time) var(--transition-cubic);
+   
+    &:hover,
+    &:focus {
+        color: var(--light-txt-cl);
+        background-color: var(--basic-blue);
+    }
+}
+
+.social__icon {
+    fill: currentColor;
+}

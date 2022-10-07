@@ -1,0 +1,27 @@
+.customers {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.customers__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-social-cl);
+    border-radius: 4px;
+    color: var(--icon-social-cl);
+    cursor: pointer;
+    transition: border-color var(--transition-time) var(--transition-cubic), color var(--transition-time) var(--transition-cubic);
+
+    &:hover,
+    &:focus {
+        color: var(--basic-blue);
+        border-color: var(--basic-blue);
+    }
+}
+
+.customers__icon {
+    fill: currentColor;
+}

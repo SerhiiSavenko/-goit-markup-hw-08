@@ -1,0 +1,108 @@
+.filter__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.filter__item {
+    background: #F5F4FA;
+    border-radius: 4px;
+    
+    &:not(:last-child) {
+    margin-right: 8px;
+}
+}
+
+.filter__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: none;
+    transition: box-shadow var(--transition-time) var(--transition-cubic), background-color var(--transition-time) var(--transition-cubic), color var(--transition-time) var(--transition-cubic);
+
+    &:hover,
+    &:focus {
+        background-color: var(--basic-blue);
+        color: var(--light-txt-cl);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+}
+
+
+.portfolio__list { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+ 
+}
+.portfolio__link {
+    display: block;
+    transition: box-shadow var(--transition-cubic) var(--transition-time);
+
+    &:hover,
+    &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+}
+
+
+.portfolio__tumb {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+    padding-right: 24px;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: transform var(--transition-time) var(--transition-cubic);
+
+    .portfolio__link:hover &,
+    .portfolio__link:focus &{
+    transform: translateY(0);
+}
+}
+
+.portfolio__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(28/18);
+    letter-spacing: 0.03em;
+    color: var(--light-txt-cl);
+}
+
+
+.portfolio__info {
+    padding: 20px 24px;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+}
+.portfolio__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+   
+}
+.portfolio__type {
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.03em;
+    color: var(--contacts-cl);
+}
