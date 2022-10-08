@@ -42,6 +42,12 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (max-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 /* block 3 */
 h1,
@@ -408,11 +414,6 @@ header {
 }
 @media screen and (max-width: 480px) {
   .customers {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin-bottom: 30px;
     width: 210px;
   }
@@ -767,6 +768,13 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-size: 28px;
+    line-height: 1.1785714286;
+    margin-bottom: 30px;
+  }
 }
 
 .backdrop {
