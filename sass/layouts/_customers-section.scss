@@ -2,12 +2,14 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-    
-    @media screen and (max-width: 480px){
-        margin-bottom: 30px;
-        width: 210px;
 
+    
+    @media screen and (max-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
     }
+
+    
 }
 
 
@@ -23,7 +25,7 @@
     cursor: pointer;
     transition: border-color var(--transition-time) var(--transition-cubic), color var(--transition-time) var(--transition-cubic);
 
- 
+
     &:hover,
     &:focus {
         color: var(--basic-blue);
