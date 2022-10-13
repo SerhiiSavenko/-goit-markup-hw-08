@@ -1,14 +1,42 @@
 .footer-container {
-    display: flex;
+    display: block;
+    text-align: center;
+    flex-wrap: wrap;
     align-items: baseline;
+
+   
 }
+
 .footer-info{
     flex-grow: 1;
-    margin-right: 70px;
+    
+
+    @media screen and (min-width: 768px) {
+        margin-right: 165px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
 }
 .footer-logo {
     display: block;
+    font-family:var(--secondary-font);
+    color: var(--basic-blue);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28/24);
+    letter-spacing: 0.03em;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: calc(31/26);
+    }
 }
 .footer-address-item,
 .footer-contacts-item {
@@ -36,9 +64,13 @@
 }
 
 .join {
-    margin-right: 93px;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
 }
 .footer-join-title {
+    justify-content: center;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);
@@ -46,11 +78,15 @@
     display: flex;
     color: var(--light-txt-cl);
     margin-bottom: 20px;
+    text-transform: uppercase;
+
 }
 .footer-join-social {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    margin-bottom: 60px;
 }
 .footer-list-link {
     display: flex;
@@ -76,6 +112,7 @@
 
 .newsletter-title {
     display: block;
+    font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
     text-transform: uppercase;
@@ -84,7 +121,14 @@
 }
 .newsletter-form-group {
     display: flex;
-    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 12px;
+    }
 }
 .newsletter-form-input {
     width: 358px;

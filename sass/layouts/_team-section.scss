@@ -3,7 +3,13 @@
 }
 .team {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap:nowrap;
+    }
 }
 .team__item {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -11,7 +17,11 @@
 }
 .team__info {
     background-color: var(--light-txt-cl);
-    padding: 30px 0;
+    padding: 30px 0 24px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 30px 0;
+    }
 }
 
 .team__title {
